@@ -1,0 +1,253 @@
+#all_center{text-align:center}
+
+.blank {
+  width: 100%;
+  height: 47px;
+  /* padding: 5px 10px 7px 315px; */
+  background-color: #60a29b;
+
+}
+
+.Rectangleshade {
+  width: 100%;
+  height: 40px;
+  background-color: #0f1c1a;
+  filter: blur(1px);
+}
+.RectangleshadeNB {
+  width: 100%;
+  height: 38px;
+  background-color: #0f1c1a;
+}
+
+.state {
+  width: 40px;
+  height: 15px;
+  margin: 3px 0 3px 6px;
+  font-family: LABDigital;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #cdcdcd;
+}
+
+
+.Rectanglesmall {
+  width: 52.5%;
+  height: 35px;
+  /* margin: 0 74px 22px 77px;
+  padding: 5px 31px 5px 24px; */
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+  border: solid 3px #565656;
+  background-color: #131313;
+}
+.Rectanglesmall #text-style-5 {
+  font-family: LucidaGrande;
+  font-size: 20px;
+  font-weight: bold;
+  color: #e40000;
+}
+
+
+/*.Line1 {
+  width: 11px;
+  height: 8px;
+  margin: 0 0 134px 315px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  border: solid 1px #201f1f;
+}
+.Line2 {
+  width: 12px;
+  height: 9px;
+  margin: 0 314px 133px 0;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  border: solid 1px #201f1f;
+}
+.Line3 {
+  width: 11px;
+  height: 8px;
+  margin: 133px 314px 1px 1px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  border: solid 1px #201f1f;
+}
+.Line4 {
+  width: 12px;
+  height: 9px;
+  margin: 133px 0 0 314px;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+  border: solid 1px #201f1f;
+}*/
+
+.predict {
+  width: 190px;
+  height: 17px;
+  margin: 19px 0 0 0;
+
+  font-family: LABDigital;
+  font-size: 17px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #d0d0d0;
+
+}
+.predict .text-style-1 {
+  color: #fff;
+  text-align: center;
+}
+
+.-B1 {
+  width: 135px;
+  height: 83px;
+  margin: 0 0 19px 0;
+
+  font-family: LABDigital;
+  font-size: 75px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #f85e00;
+
+
+}
+.-B1 #text-style-1 {
+  font-family: LucidaGrande;
+  font-size: 70px;
+}
+.-B1 #text-style-2 {
+  font-family: LucidaGrande;
+  font-size: 50px;
+  line-height: 300%;
+}
+.-B1 #text-style-3 {
+  font-family: LucidaGrande;
+  font-size: 30px;
+  margin: 0 0 0 38%
+  line-height: 300%;
+}
+.floor {
+  width: 94.7%;
+  height: 158px;
+  /* margin: 8px 8px 6px;
+  padding: 23px 79px 16px 80px; */
+  border: solid 1px #252525;
+  background-color: #121212;
+}
+
+.floor-border {
+  width: 94%;
+  height: 175px;
+  margin: auto;
+  /* margin-left: 10px;
+  padding: 2px 1px 1px; */
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
+  border: solid 1px #6d6d6d;
+  background-color: #6d6d6d;
+}
+
+.background {
+  width: 100%;
+  height: 394px;
+  /* padding: 49px 10px 113px; */
+  background-color: #f0f3ff;
+}
+
+.door1 {
+  animation-duration: 10s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  width:50%;
+  height:229.5px;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+    width: 50%;
+  }
+  25% {
+    margin-left: 0%;
+    width: 0%;
+  }
+  75% {
+    margin-left: 0%;
+    width: 0%;
+  }
+  100% {
+    margin-left: 0%;
+    width: 50%;
+  }
+}
+
+.door2 {
+  animation-duration: 10s;
+  animation-name: slidein2;
+  animation-iteration-count: infinite;
+  width:50%;
+  height:229.5px;
+}
+@keyframes slidein2 {
+  0% {
+    margin-left: 0%;
+    width:50%;
+  }
+  25% {
+    margin-left: 50%;
+    width:0%;
+  }
+  75% {
+    margin-left: 50%;
+    width:0%;
+  }
+  100% {
+    margin-left: 0%;
+    width:50%;
+  }
+}
+
+.DDDRectangle {
+  width: 100%;
+  height: 30px;
+  background-color: #707070;
+}
+.elebackground {
+  width: 100%;
+  height: 100%;
+  /* padding: 4px 0 165px; */
+  background-color: #121212;
+}
+
+/*.shade2-1 {
+  width: 180px;
+  height: 73px;
+  background-color: #427570;
+}
+.door1 {
+  width: 180px;
+  height: 227.5px;
+  border: solid 1px #427570;
+  background-color: #60a29b;
+}
+.shade2-2 {
+  width: 180px;
+  height: 73px;
+  background-color: #427570;
+}
+.door2 {
+  width: 180px;
+  height: 227.5px;
+  border: solid 1px #427570;
+  background-color: #60a29b;
+}*/

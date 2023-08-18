@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엘레베이터</title>
+    <link rel="stylesheet" href="qwerty.css">
+</head>
+<body>
+
+    <div class="elebackground" style="position: absolute; left: 0px; top: 0px;"></div>
+    <div class="DDDRectangle" style="position: absolute; left: 0px; top: 445px;"></div>
+    <img src= '../static/images/gg.png' style="position: absolute; left: 80px; top: 490px;" width="180" height="150">
+    <!--<div class="door2" style="position: absolute; left: 180px; top: 410.5px;"></div>-->
+    <img class="door2" src='../static/images/door2.png'  style="position: absolute; left: 50%; top: 410.5px;">
+    <!--<div class="shade2-2" style="position: absolute; left: 180px; top: 410.5px;"></div>-->
+    <!--<div class="door1" style="position: absolute; left: 0px; top: 410.5px;"></div>-->
+    <img class="door1" src='../static/images/door1.png'  style="position: absolute; left: 0px; top: 410.5px;">
+    <!--<div class="shade2-1" style="position: absolute; left: 0px; top: 410.5px;"></div>-->
+    <div class="background" style="position: absolute; left: 0px; top: 47px;"></div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+    var  imgg;
+    window.onload = function() {
+ 	  if (!!window.EventSource) {
+     	   var source = new EventSource('/');
+      	  source.onmessage = function(e) {
+      	  const str = e.data.split(" ") 
+      	  imgg = str[3]
+              $("#text-style-3").text(str[1]);
+      	  $("#text-style-2").text(str[2]);
+	  if (str[0]==="FULL"){
+	    $("#text-style-4").text("FULL");
+	    $("#text-style-5").text(" ");
+	  }else{
+                $("#text-style-4").text(str[4]);
+	    $("#text-style-5").text(" ")
+	  }
+              var imgee = document.getElementById( 'emo' )
+              const emo= '../static/images/' + imgg
+              imgee.setAttribute( 'src',  emo)
+
+            $('#test').text(imgg)
+          }
+        }
+}
+  </script>
+    <div class="floor-border" style="position: absolute; left: 3%; top: 153px;">
+      <div class="floor" style="position: absolute; left: 2.65%; top: 7px;">
+  	<span class="-B1"style="position: relative;">
+  		<span id="text-style-3" style="position: relative; left: 35%; top: 2px;">?층</span><span id="text-style-2" style="position: relative; left: 40%; top: 2px;">?층</span>
+  	</span>
+	<span class="predict" style="position:absolute;left:43%; top:70px;">
+            	</span>
+      </div>
+    </div>
+
+    <!--<div class="Line1"></div>
+    <div class="Line2"></div>
+    <div class="Line3"></div>
+    <div class="Line4"></div>-->
+    <div class="blank" style="position: absolute; left: 0px; top: 0px;"></div>x;"
+    <img src='../static/images/home.png' class='home' style="position: absolute; right: 5%;; top: 5px;" width="35" height="35">
+    <div class="Rectanglesmall" style="position: absolute; left: 23.75%; top: 96px;">
+        <img src= "" id="emo" style="position: absolute; left: 12.69%; top: 5px;" width="25" height="25">
+        <span id="text-style-5" style="position: absolute; left: 42%; top: 5px;">
+            FULL
+        </span>
+        <span id="text-style-4" class="state" style="position: absolute; left: 42%; top: 5px;"> 
+            
+        </span>
+    </div>
+    <div class="Rectangleshade" style="position: absolute; left: 0px; top: 406px;"></div>
+    <div class="RectangleshadeNB" style="position: absolute; left: 0px; top: 407px;"></div>
+</body>
+</html>
